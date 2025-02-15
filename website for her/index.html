@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-pink-50 text-gray-800">
- 
+    <iframe src="music.html" style="display: none;"></iframe>
     <nav class="fixed w-full bg-white shadow-md py-4">
         <div class="container mx-auto flex justify-between items-center px-6">
             <h1 class="text-xl mx-auto font-extrabold text-pink-700">Wifeyyy</h1>
@@ -140,18 +140,6 @@
     
    
     <script>
-    document.addEventListener("DOMContentLoaded", function () {
-    const audio = document.getElementById("background-music");
-
-    
-    const playAudio = () => {
-        audio.play().catch(() => {
-            document.body.addEventListener("click", () => audio.play(), { once: true });
-        });
-    };
-
-    playAudio();
-});
 
 document.addEventListener("DOMContentLoaded", function () {
     let audio = document.getElementById("background-music");
