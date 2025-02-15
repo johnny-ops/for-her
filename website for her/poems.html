@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poems for Her</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-pink-50 text-gray-800 flex flex-col items-center justify-center min-h-screen text-center px-6">
+
+    <iframe src="music.html" style="display: none;"></iframe>
+
+    <nav class="fixed top-0 left-0 w-full bg-white shadow-md py-4 z-[100]">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <h1 class="text-xl font-extrabold text-pink-700">Wifeyyy</h1>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="hover:text-pink-600 transition">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+ 
+    <div class="pt-20"></div>
+    
+    <h2 class="text-5xl font-extrabold text-pink-700 mb-8 tracking-wide drop-shadow-lg">Poems for Her</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+            <h3 class="text-xl font-semibold text-pink-700">Poem 1</h3>
+            <p class="text-gray-600 mt-2 italic">"Even when you're grumpy..."</p>
+            <button onclick="openPoem(1)" class="mt-4 bg-pink-700 text-white py-2 px-4 rounded-lg hover:bg-pink-600 transition w-full">Read</button>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+            <h3 class="text-xl font-semibold text-pink-700">Poem 2</h3>
+            <p class="text-gray-600 mt-2 italic">"In the quiet chambers of my heart, you reside,A constant presence..."</p>
+            <button onclick="openPoem(2)" class="mt-4 bg-pink-700 text-white py-2 px-4 rounded-lg hover:bg-pink-600 transition w-full">Read</button>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+            <h3 class="text-xl font-semibold text-pink-700">Poem 3</h3>
+            <p class="text-gray-600 mt-2 italic">"In the quiet chambers of my heart, you reside,A constant presence..."</p>
+            <button onclick="openPoem(3)" class="mt-4 bg-pink-700 text-white py-2 px-4 rounded-lg hover:bg-pink-600 transition w-full">Read</button>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+            <h3 class="text-xl font-semibold text-pink-700">Poem 4</h3>
+            <p class="text-gray-600 mt-2 italic">"In the quiet chambers of my heart, you reside,A constant presence..."</p>
+            <button onclick="openPoem(4)" class="mt-4 bg-pink-700 text-white py-2 px-4 rounded-lg hover:bg-pink-600 transition w-full">Read</button>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+            <h3 class="text-xl font-semibold text-pink-700">Poem 5</h3>
+            <p class="text-gray-600 mt-2 italic">"In your arms, I find home..."</p>
+            <button onclick="openPoem(5)" class="mt-4 bg-pink-700 text-white py-2 px-4 rounded-lg hover:bg-pink-600 transition w-full">Read</button>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+            <h3 class="text-xl font-semibold text-pink-700">Poem 6</h3>
+            <p class="text-gray-600 mt-2 italic">"In your arms, I find home..."</p>
+            <button onclick="openPoem(6)" class="mt-4 bg-pink-700 text-white py-2 px-4 rounded-lg hover:bg-pink-600 transition w-full">Read</button>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+            <h3 class="text-xl font-semibold text-pink-700">Poem 7</h3>
+            <p class="text-gray-600 mt-2 italic">"In your arms, I find home..."</p>
+            <button onclick="openPoem(7)" class="mt-4 bg-pink-700 text-white py-2 px-4 rounded-lg hover:bg-pink-600 transition w-full">Read</button>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+            <h3 class="text-xl font-semibold text-pink-700">Poem 3</h3>
+            <p class="text-gray-600 mt-2 italic">"In your arms, I find home..."</p>
+            <button onclick="openPoem(8)" class="mt-4 bg-pink-700 text-white py-2 px-4 rounded-lg hover:bg-pink-600 transition w-full">Read</button>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+            <h3 class="text-xl font-semibold text-pink-700">Poem 3</h3>
+            <p class="text-gray-600 mt-2 italic">"In your arms, I find home..."</p>
+            <button onclick="openPoem(9)" class="mt-4 bg-pink-700 text-white py-2 px-4 rounded-lg hover:bg-pink-600 transition w-full">Read</button>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+            <h3 class="text-xl font-semibold text-pink-700">Poem 3</h3>
+            <p class="text-gray-600 mt-2 italic">"In your arms, I find home..."</p>
+            <button onclick="openPoem(10)" class="mt-4 bg-pink-700 text-white py-2 px-4 rounded-lg hover:bg-pink-600 transition w-full">Read</button>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+            <h3 class="text-xl font-semibold text-pink-700">Poem 3</h3>
+            <p class="text-gray-600 mt-2 italic">"In your arms, I find home..."</p>
+            <button onclick="openPoem(11)" class="mt-4 bg-pink-700 text-white py-2 px-4 rounded-lg hover:bg-pink-600 transition w-full">Read</button>
+        </div>
+    </div>
+
+    <div id="poemModal" class="fixed inset-0 bg-black bg-opacity-40 backdrop-blur-sm hidden flex items-center justify-center transition-opacity">
+        <div class="bg-white p-8 rounded-2xl shadow-2xl max-w-lg w-full text-center transform scale-95 opacity-0 transition-all duration-300">
+            <button onclick="closePoem()" class="absolute top-4 right-6 text-gray-500 hover:text-gray-700 transition">
+                ✖
+            </button>
+            <h3 id="poemTitle" class="text-3xl font-bold text-pink-700 mb-4"></h3>
+            <p id="poemText" class="text-gray-700 leading-relaxed italic"></p>
+            <button onclick="closePoem()" class="mt-6 bg-pink-700 text-white px-6 py-3 rounded-lg hover:bg-pink-600 transition">Close</button>
+        </div>
+    </div>
+
+    <script>
+        const poems = {
+            1: "Even when you're grumpy, your beauty never fades, a warm glow brightening my day through every mood and shade.",
+            2: "In the quiet chambers of my heart, you reside,A constant presence, my feelings can't hide.With each passing moment, you're on my mind,Your gentle grace, a treasure to find.With every breath I take, my souls takes flight,Guided by your essence, pure and bright.A yearning deep within, a flameburning true,For you are the light that leads me through.",
+            3: "To the girl that I trust the most, You've healed my wounded soul, held me close.I'll cherish the love we've built,forevermore,For you're the one I trust, the one I adore.",
+            4: "In your gentle light my love, it's clear,A bond so strong, a loveso sincere.With each passing heartbeat, my world feels right,Guided by your beauty, shining so bright.Your smile, a beacon that lights up my days,In your tender presence, my heart finds its ways.I promise you this my love,forever true,I'll stand by your side, ineverything we pursue With you my love, I've found my home,In your warm embrace, I'llforever roam.Through every storm, through skies of blue,I'll cherish you always, for my heart belongs to you.So here's my pledge my love so clear,I'll never leave you, I'll always be near.With your beauty and grace, myheart's inspired,Forever and always, in love, we're attired.",
+            5: "Your laughter paints the sky with joy, and your embrace is where I find solace. With you, days turn into magical nights, and your love's melody completes my world. Each moment we share is a precious delight, carried on thewings of your love forever Your smile is the sun that lights my way,In your warmth, my heart findsits sway.Hand in hand, through life,let's stride,With you, my love, I'mforever alive.",
+            6: "Beneath the canvas of the sky so wide,With you, love's journey is ajoyful ride.Lucky as a leaf kissed bymorning dew,Having you, my love, makes everymoment new.",
+            7: "In the midst of life's garden, her essence shines like a cherishedtulip, her radiance rivaling even the most vivid blooms.Just as each petal holds a unique grace, her presence exudes a captivating beauty that continually mesmerizes my heart.Just like the tulips sway gracefully in the breeze, her laughter dances through the air, infusing joy into every moment we share.With each passing day, her love, like the tulips' timeless elegance, becomes a cherished part of my world, forever blooming with grace and tenderness.",
+            8: "In your gentle light my love, it's clear,A bond so strong, a loveso sincere.With each passing heartbeat, my world feels right,Guided by your beauty, shining so bright.Your smile, a beacon that lights up my days,In your tender presence, my heart finds its ways.I promise you this my love,forever true,I'll stand by your side, ineverything we pursue.",
+            9: "In your arms, I find home, a place where love is pure, where every heartbeat echoes forevermore.",
+            10: "In your arms, I find home, a place where love is pure, where every heartbeat echoes forevermore.",
+            11: "In your arms, I find home, a place where love is pure, where every heartbeat echoes forevermore.",
+            12: "In your arms, I find home, a place where love is pure, where every heartbeat echoes forevermore.",
+            13: "In your arms, I find home, a place where love is pure, where every heartbeat echoes forevermore.",
+            14: "In your arms, I find home, a place where love is pure, where every heartbeat echoes forevermore.",
+            15: "In your arms, I find home, a place where love is pure, where every heartbeat echoes forevermore.",
+            16: "In your arms, I find home, a place where love is pure, where every heartbeat echoes forevermore.",
+            17: "In your arms, I find home, a place where love is pure, where every heartbeat echoes forevermore."
+        };
+
+        function openPoem(poemNumber) {
+            document.getElementById('poemTitle').innerText = `Poem ${poemNumber}`;
+            document.getElementById('poemText').innerText = poems[poemNumber];
+            const modal = document.getElementById('poemModal');
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.children[0].classList.add('opacity-100', 'scale-100');
+            }, 50);
+        }
+
+        function closePoem() {
+            const modal = document.getElementById('poemModal');
+            modal.children[0].classList.remove('opacity-100', 'scale-100');
+            setTimeout(() => modal.classList.add('hidden'), 200);
+        }
+        
+document.addEventListener("DOMContentLoaded", function () {
+    let audio = document.getElementById("background-music");
+
+    if (!audio) {
+        audio = document.createElement("audio");
+        audio.id = "background-music";
+        audio.autoplay = true;
+        audio.loop = true;
+        audio.src = "piano.mp3";
+        document.body.appendChild(audio);
+    }
+
+  
+    const savedTime = localStorage.getItem("musicTime");
+    if (savedTime) {
+        audio.currentTime = savedTime;
+    }
+
+
+    window.addEventListener("beforeunload", function () {
+        localStorage.setItem("musicTime", audio.currentTime);
+    });
+});
+
+    </script>
+
+</body>
+</html>

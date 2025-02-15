@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photobooth</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #f4f4f4;
+        }
+        #video {
+            border: 2px solid #333;
+            width: 300px;
+            height: auto;
+        }
+        #canvas {
+            display: none;
+        }
+        #preview {
+            border: 2px solid #333;
+            margin-top: 10px;
+            width: 300px;
+            height: auto;
+        }
+        .btn {
+            background: #007BFF;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>📸 Photobooth with Figma Design</h2>
+    
+    <!-- Video stream -->
+    <video id="video" autoplay></video>
+    
+    <!-- Capture button -->
+    <button class="btn" onclick="capturePhoto()">Capture</button>
+
+    <!-- Choose a design -->
+    <h3>Select Figma Design:</h3>
+    <select id="designSelector">
+        <option value="design1.png">Design 1</option>
+        <option value="design2.png">Design 2</option>
+    </select>
+
+    <!-- Preview area -->
+    <canvas id="canvas"></canvas>
+    <img id="preview" alt="Captured Image">
+
+    <br>
+    <button class="btn" onclick="downloadImage()">Download</button>
+
+    <script>
+        const video = document.getElementById('video');
+        const canvas = document.getElementById('canvas');
+        const preview = document.getElementById('preview');
+        const ctx = canvas.getContext('2d');
+
+        // Start webcam
+        navigator.mediaDevices.getUserMedia({ video: true })
+            .then(stream => video.srcObject = stream)
+            .catch(err => console.error("Error accessing webcam:", err));
+
+        function capturePhoto() {
+            // Set canvas size
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+
+            // Draw webcam image
+            ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+            // Load selected Figma design
+            let selectedDesign = document.getElementById('designSelector').value;
+            let designImage = new Image();
+            designImage.src = selectedDesign;
+            
+            designImage.onload = function () {
+                // Draw the design overlay on top
+                ctx.drawImage(designImage, 0, 0, canvas.width, canvas.height);
+                
+                // Show preview
+                preview.src = canvas.toDataURL('image/png');
+                preview.style.display = "block";
+            };
+        }
+
+        function downloadImage() {
+            const link = document.createElement('a');
+            link.download = 'photobooth.png';
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        }
+    </script>
+
+</body>
+</html>
